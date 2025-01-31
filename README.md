@@ -19,6 +19,7 @@ Finally, it calculates "entropy difference" -- the amount of average conditional
 Ultimately, the scripts in this release are designed to facilitate quantitative, cross-linguistic comparison of inflectional systems based on their systemic internal organization.
 
 2.0.1 CONTENT UPDATES 
+
 KARAKALPAK
 Added.
 
