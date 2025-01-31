@@ -23,9 +23,11 @@ Ultimately, the scripts in this release are designed to facilitate quantitative,
 2.0.1 CONTENT UPDATES 
 
 KARAKALPAK
+
 Added.
 
 KAZAKH
+
 Added.
 
 ####################
