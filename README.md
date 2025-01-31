@@ -1,7 +1,9 @@
 Graph-theoretic analysis of morphological voice networks
 
 Author: Matthew Zaslansky (University of California, San Diego, Department of Linguistics)
+
 Version: 2.0.1 (Pre-Release Build)
+
 Version date: 31 January 2025
 
 ####################
