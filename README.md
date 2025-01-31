@@ -18,7 +18,21 @@ Additionally, the code implements probability and entropy calculations for indiv
 
 Finally, it calculates "entropy difference" -- the amount of average conditional entropy in a network minus the amount of average conditional entropy with one node (class) removed -- and graphs correlations between network properties and entropy difference, to facilitate evaluation of how network properties contribute to the 'complexity' of the inflection class system.
 
-Ultimately, the scripts in this release are designed to facilitate quantitative, cross-linguistic comparison of inflectional systems based on their systemic internal organization.
+The six scripts in this release are designed to facilitate quantitative, cross-linguistic comparison of inflectional systems based on their systemic internal organization;
+
+The main function calls are in main.R. When the working directory is the same as the directory containing the scripts, 
+
+source("main.R")
+main.fnc(all_files)
+
+will run all major functions -- calculations and graphs -- for all files in language_plats/ . An unlimited number of language plats is accommodated.
+
+network.fnc() calculates various graph-theoretic measures of each inflectional network, makes network and other graphs, and writes out summary files of network properties. It only calculates measures for each language individually.
+
+comparison.fnc() graphs some limited comparisons across all plats -- e.g. plotting mean shortest path length against global clustering coefficient -- and adds Monte Carlo simulations of each language.
+
+entropy.fnc() makes probability/entropy calculations: probability of exponents (unconditioned and conditioned on one other exponent), unconditioned entropy of a cell, entropy of a cell conditioned on one other cell (in the style of Ackerman et al. 2009 and Ackerman and Malouf 2013). It also calculates "entropy difference" -- the difference between the mean conditional entropy of paradigm cells in a full inflectional system and the mean conditional entropy of paradigm cells of the same system with one class removed. It iterates through all classes in the plat and outputs a summary file for each modified IC system.
+
 
 2.0.1 CONTENT UPDATES 
 
